@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystals Collector</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+	<link rel="stylesheet" href="assets/css/style.css"> 
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src= "assets/javascript/game.js"> </script>
+
+</head>
+<body>
+
+<div class="wrapper">
+	<header>
+	</header>
+
+	<div class= "row">
+		<div class="col-sm-12">
+				<h1>Crystals Collector</h1>
+				<ul class="rules">
+					<li> Ruls: </li> 
+					<li> 
+						&bull; You will be given a random number as a goal at the start of the game.
+					</li>
+					<li> 
+						&bull; There are four crystals below.By clicking on a crystal, you will add a specific amount of points to your total score.
+					</li>
+					<li>
+						&bull; You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+					</li>
+					<li> 
+						&bull; The value of each crystal is hidden from you until you click on it.
+					</li>
+					<li>
+						&bull; Each time when the game starts, the game will change the values of each crystal.
+					</li>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="goalNumStyle" id = "goalNumDiv"> </div>
+		</div>
+		<div class="col-sm-6">
+			<div class="currentScoreStyle" id = "currentScoreDiv"> </div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class = "gemsDiv"> 
+				<img id = "gem0Id" class="gemStyle" src= "assets/images/gem0.png"/>
+				<img id = "gem1Id" class="gemStyle" src= "assets/images/gem1.png"/>
+				<img id = "gem2Id" class="gemStyle" src= "assets/images/gem2.png"/>
+				<img id = "gem3Id" class="gemStyle" src= "assets/images/gem3.png"/>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-sm-4">
+			<span class="rowIndent"> Wins: </span> <span id = "winRecordDiv"> </span>
+		</div>
+
+		<div class="col-sm-4">
+			<span> Losses: </span> <span id = "lossRecordDiv"> </span>
+		</div>
+
+		<div class="col-sm-4">
+			<div id = "winOrLoss"> </div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
